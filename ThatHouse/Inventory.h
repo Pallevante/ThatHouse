@@ -1,15 +1,22 @@
 #pragma once
 #include <vector>
+#include <algorithm>
 #include "Item.h"
 class Inventory{
 public:
-	//The vector the player will use.
-	static std::vector<Item> inventoryVector;
 
-	//The vector the inventory will use for random items.
-	static std::vector<Item> itemsToFindVector;
+	// The vector the player will use.
+	typedef std::vector<Item> InventoryVector;
+	static Inventory::InventoryVector inventoryVector;
 
+	// The vector the inventory will use for random items.
+	typedef std::vector<Item> ItemsToFindVector;
+	static Inventory::ItemsToFindVector itemsToFindVector;
+
+	// Gives the user a random Item.
 	static void getRandomItem();
+	// Prints the inventory.
 	static void check();
+	// Drops the item.
 	static void drop();
 };

@@ -5,7 +5,7 @@ class Item{
 public:
 	Item();
 	~Item();
-
+	// Some basic functionalities of every item subclass.
 	virtual int			getDamage()			= 0;
 	virtual std::string getName()			= 0;
 	virtual std::string getPickUpString()	= 0;
