@@ -11,9 +11,9 @@ void Inventory::getRandomItem()
 	inventoryVector.push_back(itemsToFindVector[0]);
 
 	// Tells the user what he/she got.
-	itemsToFindVector[0].getPickUpString();
+	itemsToFindVector[0]->getPickUpString();
 
 	// Removes the first item if it's supposed to only be found once. #obfo
-	if (itemsToFindVector[0].removeOnceFound())
+	if (itemsToFindVector[0]->removeOnceFound())
 		itemsToFindVector.pop_back();
 }

@@ -13,11 +13,11 @@ public:
 		FOURTH	= 3
 	};
 	static enum CurrentPart{
-		FIRST	= 0,
-		SECOND	= 1,
-		THIRD	= 2,
-		FOURTH	= 3
-	};
+		FIRST_PART	= 0,
+		SECOND_PART = 1,
+		THIRD_PART	= 2,
+		FOURTH_PART	= 3
+	};		  
 
 	// Basicly just increments the values.
 	static void				progressChapter();

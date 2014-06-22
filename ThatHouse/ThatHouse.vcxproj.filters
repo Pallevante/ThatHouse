@@ -48,6 +48,12 @@
     <ClCompile Include="Chapters.cpp">
       <Filter>Source Files\Story</Filter>
     </ClCompile>
+    <ClCompile Include="BaseballBat.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ThreadWriting.h">
@@ -64,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Chapters.h">
       <Filter>Header Files\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseballBat.h">
+      <Filter>Header Files\Items</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

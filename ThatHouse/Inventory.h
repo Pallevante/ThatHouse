@@ -6,11 +6,11 @@ class Inventory{
 public:
 
 	// The vector the player will use.
-	typedef std::vector<Item> InventoryVector;
+	typedef std::vector<Item*> InventoryVector;
 	static Inventory::InventoryVector inventoryVector;
 
 	// The vector the inventory will use for random items.
-	typedef std::vector<Item> ItemsToFindVector;
+	typedef std::vector<Item*> ItemsToFindVector;
 	static Inventory::ItemsToFindVector itemsToFindVector;
 
 	// Gives the user a random Item.
