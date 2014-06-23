@@ -9,8 +9,7 @@ public:
 	static enum CurrentChapter{
 		FIRST	= 0,
 		SECOND	= 1,
-		THIRD	= 2,
-		FOURTH	= 3
+		THIRD	= 2
 	};
 	static enum CurrentPart{
 		FIRST_PART	= 0,
