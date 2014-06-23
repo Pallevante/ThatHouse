@@ -11,6 +11,7 @@ bool Inventory::init()
 }
 
 bool Inventory::populateWithDefaultItems(){
+	// Just because some items might fuck up.
 	try
 	{
 		itemsToFindVector.push_back(new BaseballBat());
@@ -20,7 +21,7 @@ bool Inventory::populateWithDefaultItems(){
 	{
 		// Error handling.
 		printf("Error initiating the itemsToFindVector\n");
-		printf("Errir code: ");
+		printf("Err code: ");
 		printf(error.what());
 		return false;
 	}

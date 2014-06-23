@@ -3,7 +3,8 @@
 #include <algorithm>
 #include "Item.h"
 #include "BaseballBat.h"
-class Inventory{
+class Inventory
+{
 public:
 	static bool init();
 	// The vector the player will use.
