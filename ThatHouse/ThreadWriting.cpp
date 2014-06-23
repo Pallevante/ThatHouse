@@ -23,7 +23,7 @@ void ThreadWriting::write(string input)
 	for (auto i : input)
 	{
 		cout << i << flush;
-		//Waits for 45 milliseconds
-		this_thread::sleep_for(chrono::milliseconds(45));
+		//Waits for 15 milliseconds
+		this_thread::sleep_for(chrono::milliseconds(15));
 	}
 }

@@ -14,7 +14,8 @@
 #include <cstdlib>
 
 using namespace std;
-class ThreadWriting{
+class ThreadWriting
+{
 public:
 	static void clear();
 	static void write(string input);

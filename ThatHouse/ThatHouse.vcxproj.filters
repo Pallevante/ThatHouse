@@ -74,6 +74,9 @@
     <ClInclude Include="BaseballBat.h">
       <Filter>Header Files\Items</Filter>
     </ClInclude>
+    <ClInclude Include="Note.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Story.txt">

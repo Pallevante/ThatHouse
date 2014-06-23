@@ -92,6 +92,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Note.h" />
     <ClInclude Include="ThreadWriting.h" />
   </ItemGroup>
   <ItemGroup>
