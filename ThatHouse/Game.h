@@ -12,5 +12,8 @@ public:
 	Game();
 	~Game();
 	void init();
+private:
+	int mKarma;
+	int mHealth;
 };
 
