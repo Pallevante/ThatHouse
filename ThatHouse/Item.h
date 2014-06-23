@@ -21,10 +21,10 @@ public:
 	bool		removeOnceFound();
 	ItemType	getType();
 private:
-	ItemType	_type;
-	int			_damage;
-	bool		_removeOnceFound;
-	std::string _name;
-	std::string _pickUp;
+	ItemType	mType;
+	int			mDamage;
+	bool		mRemoveOnceFound;
+	std::string mName;
+	std::string mPickUp;
 
 };
