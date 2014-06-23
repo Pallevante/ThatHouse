@@ -1,28 +1,28 @@
 #pragma once
 #include <string>
 
-class Item{
+class Item
+{
 public:
-	static enum ItemType{
+	static enum ItemType
+	{
 		WEAPON,
 		NOTE,
-		BULLETS,
 		GARBAGE
 	};
 
 	Item();
 	~Item();
-	Item(ItemType type, std::string name, int damage, std::string pickUpString, bool remFound);
+	Item(ItemType type, std::string name, std::string pickUpString, bool remFound);
 
 	// Some basic functionalities of every item subclass.
-	int			getDamage();
 	std::string getName();
 	std::string getPickUpString();
 	bool		removeOnceFound();
 	ItemType	getType();
-private:
+
+protected:
 	ItemType	mType;
-	int			mDamage;
 	bool		mRemoveOnceFound;
 	std::string mName;
 	std::string mPickUp;

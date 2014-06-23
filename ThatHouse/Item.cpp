@@ -4,10 +4,9 @@ Item::Item(){}
 
 Item::~Item(){}
 
-Item::Item(ItemType type, std::string name, int damage, std::string pickupMessage, bool remFound) : 
+Item::Item(ItemType type, std::string name, std::string pickupMessage, bool remFound) : 
 mType(type),
 mName(name),
-mDamage(damage),
 mPickUp(pickupMessage),
 mRemoveOnceFound(remFound)
 {
@@ -22,17 +21,10 @@ bool Item::removeOnceFound()
 {
 	return mRemoveOnceFound;
 }
-
-int Item::getDamage()
-{
-	return mDamage;
-}
-
 std::string Item::getPickUpString()
 {
 	return mPickUp;
 }
-
 std::string Item::getName()
 {
 	return mName;
