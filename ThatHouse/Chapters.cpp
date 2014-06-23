@@ -2,6 +2,9 @@
 
 int Chapters::currentPart = 0;
 int Chapters::currentChapter = 0;
+Chapters::CurrentChapter Chapters::mChapter;
+Chapters::CurrentPart Chapters::mPart;
+
 
 Chapters::Chapters(){}
 Chapters::~Chapters(){}

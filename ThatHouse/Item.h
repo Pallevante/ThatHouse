@@ -6,6 +6,7 @@ public:
 	static enum ItemType{
 		WEAPON,
 		NOTE,
+		BULLETS,
 		GARBAGE
 	};
 

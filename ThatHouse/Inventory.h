@@ -2,9 +2,10 @@
 #include <vector>
 #include <algorithm>
 #include "Item.h"
+#include "BaseballBat.h"
 class Inventory{
 public:
-
+	static bool init();
 	// The vector the player will use.
 	typedef std::vector<Item*> InventoryVector;
 	static Inventory::InventoryVector inventoryVector;
@@ -19,4 +20,7 @@ public:
 	static void check();
 	// Drops the item.
 	static void drop();
+
+private:
+	static bool populateWithDefaultItems();
 };
