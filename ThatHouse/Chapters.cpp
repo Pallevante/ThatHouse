@@ -12,15 +12,22 @@ Chapters::~Chapters(){}
 void Chapters::progressChapter()
 {
 	// This should work.
-	mChapter = static_cast<CurrentChapter>(currentChapter);
 	Chapters::currentChapter++;
 	Chapters::currentPart = 0;
+	mChapter = static_cast<CurrentChapter>(currentChapter);	
 }
 
 void Chapters::progressPart()
 {
+	if (mPart == FOURTH_PART) 
+	{ 
+		progressChapter(); 
+		return; 
+	}
+
 	++Chapters::currentPart;
-	mPart = static_cast<CurrentPart>(currentPart);	
+	mPart = static_cast<CurrentPart>(currentPart);
+
 }
 
 Chapters::CurrentChapter Chapters::getChapter()
