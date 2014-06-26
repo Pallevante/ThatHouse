@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 class Chapters
 {
 public:
@@ -24,6 +25,9 @@ public:
 
 	static CurrentChapter	getChapter();
 	static CurrentPart		getPart();
+	static std::string		printPart();
+	static std::string		printChapter();
+
 private:
 	static CurrentChapter	mChapter;
 	static CurrentPart		mPart;
