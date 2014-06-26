@@ -1,6 +1,7 @@
 #include "Game.h"
 #include "Item.h"
 #include "Inventory.h"
+#include "Chapters.h"
 
 Game::Game()
 {}
@@ -20,7 +21,18 @@ void Game::init()
 
 void Game::play()
 {
+	// If this happends then the vectors is probably on a bad memory address nothing to do about it.
 	if (!Inventory::init())
 		ThreadWriting::write("\nERROR WHILE INITIALIZING - GAME IS BROKEN :(");
+
+	// Progressing test.
+	ThreadWriting::write(Chapters::printPart());
+	Chapters::progressPart();
+	getchar();
+	ThreadWriting::write(Chapters::printPart());
+	Chapters::progressPart();
+	getchar();
+	ThreadWriting::write(Chapters::printPart());
+	Chapters::progressPart();
 	getchar();
 }

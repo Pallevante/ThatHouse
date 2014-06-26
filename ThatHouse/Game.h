@@ -15,7 +15,8 @@ public:
 private:
 	void play();
 	void displayHelp();
-	int mKarma;
-	int mHealth;
+	std::string mName;
+	int			mKarma;
+	int			mHealth;
 };
 
