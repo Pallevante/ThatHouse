@@ -31,6 +31,9 @@
     <Filter Include="Header Files\Logic">
       <UniqueIdentifier>{51fa8a12-365a-42ec-809d-167e823a6d4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Characters">
+      <UniqueIdentifier>{9754d316-8a12-4784-b36b-9c3c9c47f3fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -54,6 +57,12 @@
     <ClCompile Include="Item.cpp">
       <Filter>Source Files\Items</Filter>
     </ClCompile>
+    <ClCompile Include="Garbage.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAI.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ThreadWriting.h">
@@ -76,6 +85,24 @@
     </ClInclude>
     <ClInclude Include="Note.h">
       <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Header Files\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="Story.h">
+      <Filter>Header Files\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="Garbage.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="Characters.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAI.h">
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Stephen.h">
+      <Filter>Header Files\Characters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
