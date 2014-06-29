@@ -8,6 +8,7 @@ bool Inventory::init()
 	if (populateWithDefaultItems())
 		return true;
 	else return false;
+	// That made my belly tingle.
 }
 
 bool Inventory::populateWithDefaultItems(){
@@ -34,7 +35,7 @@ void Inventory::getRandomItem()
 	std::random_shuffle(itemsToFindVector.begin(), itemsToFindVector.end());
 	inventoryVector.push_back(itemsToFindVector[0]);
 
-	// Tells the user what he/she got.
+	// So the user knows what he/she got.
 	itemsToFindVector[0]->getPickUpString();
 
 	// Removes the first item if it's supposed to only be found once. #obfo

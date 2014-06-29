@@ -9,9 +9,7 @@ mType(type),
 mName(name),
 mPickUp(pickupMessage),
 mRemoveOnceFound(remFound)
-{
-
-}
+{}
 
 Item::ItemType Item::getType()
 {
