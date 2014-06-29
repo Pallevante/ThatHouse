@@ -17,6 +17,7 @@ using namespace std;
 class ThreadWriting
 {
 public:
-	static void clear();
-	static void write(string input);
+	void write(string input);
+private:
+	void clear();
 };
