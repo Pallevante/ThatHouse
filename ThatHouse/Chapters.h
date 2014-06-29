@@ -7,12 +7,14 @@ public:
 	~Chapters();
 
 	// Might be shortened
-	static enum CurrentChapter{
+	static enum CurrentChapter
+	{
 		FIRST	= 0,
 		SECOND	= 1,
 		THIRD	= 2
 	};
-	static enum CurrentPart{
+	static enum CurrentPart
+	{
 		FIRST_PART	= 0,
 		SECOND_PART = 1,
 		THIRD_PART	= 2,
