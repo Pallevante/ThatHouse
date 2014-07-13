@@ -16,6 +16,14 @@ void ThreadWriting::clear()
 	#endif
 }
 
+void ThreadWriting::wait()
+{
+	cin.clear();
+	cin.get();
+	cin.get();
+}
+
+
 void ThreadWriting::write(string input)
 {
 	// Uses "our" clear method.
@@ -23,7 +31,7 @@ void ThreadWriting::write(string input)
 	for (auto i : input)
 	{
 		cout << i << flush;
-		// Waits for 15 milliseconds to give the typewriting effect.
-		this_thread::sleep_for(chrono::milliseconds(15));
+		// Waits for 20 milliseconds to give the typewriting effect.
+		this_thread::sleep_for(chrono::milliseconds(20));
 	}
 }

@@ -18,6 +18,7 @@ class ThreadWriting
 {
 public:
 	void write(string input);
+	void wait();
 private:
 	void clear();
 };

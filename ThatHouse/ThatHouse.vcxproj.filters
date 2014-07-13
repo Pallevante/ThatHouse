@@ -34,6 +34,9 @@
     <Filter Include="Header Files\Characters">
       <UniqueIdentifier>{9754d316-8a12-4784-b36b-9c3c9c47f3fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{ccd61e91-7956-4b64-8ba0-6053f3dd2cb7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -62,6 +65,12 @@
     </ClCompile>
     <ClCompile Include="GameAI.cpp">
       <Filter>Source Files\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Characters.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Stephen.cpp">
+      <Filter>Source Files\Characters</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +112,9 @@
     </ClInclude>
     <ClInclude Include="Stephen.h">
       <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInput.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -3,6 +3,8 @@
 #include <algorithm>
 #include "Item.h"
 #include "BaseballBat.h"
+#include "Garbage.h"
+
 class Inventory
 {
 public:

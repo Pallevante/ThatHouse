@@ -9,14 +9,15 @@
 #include "Item.h"
 #include "Inventory.h"
 #include "Chapters.h"
-
+#include "Stephen.h"
 class Game
 {
 public:
 	Game();
 	~Game();
 	void init();
-	static bool initCharacters();
+	void start();
+	bool initCharacters();
 private:
 	void play();
 	void displayHelp();

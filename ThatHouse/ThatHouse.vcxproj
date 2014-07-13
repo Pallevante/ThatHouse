@@ -79,6 +79,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Chapters.cpp" />
+    <ClCompile Include="Characters.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameAI.cpp" />
     <ClCompile Include="Garbage.cpp" />
@@ -86,6 +87,7 @@
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="BaseballBat.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Stephen.cpp" />
     <ClCompile Include="ThreadWriting.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +104,7 @@
     <ClInclude Include="Stephen.h" />
     <ClInclude Include="Story.h" />
     <ClInclude Include="ThreadWriting.h" />
+    <ClInclude Include="UserInput.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Story.txt" />

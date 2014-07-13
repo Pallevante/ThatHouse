@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 
 class Characters 
 {
@@ -9,12 +10,17 @@ public:
 		STEPHEN,
 		CATHRIN
 	};
+	typedef std::vector<Characters*> CharacterVector;
+	static Characters::CharacterVector characterVector;
 
 	Characters();
 	Characters(CharacterName name);
 	~Characters();
-	int getCharacterLike(CharacterName name);
-private:
+	int getCharacterLike();
+	std::string characterResponse();
+	void setLike(CharacterName name, int addToLike);
+	CharacterName getName();
+protected:
 	CharacterName	mName;
 	int				mLike;
 };

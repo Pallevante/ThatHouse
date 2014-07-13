@@ -11,11 +11,13 @@ bool Inventory::init()
 	// That made my belly tingle.
 }
 
-bool Inventory::populateWithDefaultItems(){
+bool Inventory::populateWithDefaultItems()
+{
 	// Just because some items might fuck up.
 	try
 	{
 		itemsToFindVector.push_back(new BaseballBat());
+		itemsToFindVector.push_back(new Garbage());
 		return true;
 	}
 	catch (std::exception error)
@@ -33,7 +35,11 @@ void Inventory::getRandomItem()
 	// Makes a random sort of the itemsToFindVector and places the first item
 	// into the inventoryVector.
 	std::random_shuffle(itemsToFindVector.begin(), itemsToFindVector.end());
-	inventoryVector.push_back(itemsToFindVector[0]);
+	
+	// Because we don't want to clutter the user inventory
+	// with garbage items.
+	if (itemsToFindVector[0]->getType() != Item::GARBAGE)
+		inventoryVector.push_back(itemsToFindVector[0]);
 
 	// So the user knows what he/she got.
 	itemsToFindVector[0]->getPickUpString();

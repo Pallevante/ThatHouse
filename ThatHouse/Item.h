@@ -4,7 +4,7 @@
 class Item
 {
 public:
-	static enum ItemType
+	enum ItemType
 	{
 		WEAPON,
 		NOTE,
