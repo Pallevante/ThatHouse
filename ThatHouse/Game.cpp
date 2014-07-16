@@ -38,17 +38,18 @@ void Game::init()
 
 void Game::play()
 {
-	tw.write("You find yourself... alone... in a strange room... \nYou try to move but you're handcuffed to a pipe in the wall.");
+	tw.write(Story::getStory());
+	UserInput::userInput();
 	tw.wait();
 }
 
 
 void Game::displayHelp()
 {
-	tw.write("This is a text based game (no-shit) with some horror elements.\n\n"
+	tw.write("This is a text based adventure game with some horror elements.\n\n"
 		"If the title contains 'Choice' then you have to decide what to do.\nIn most cases you can type 'what to do?' and you'll get a hint.\n"
 		"Bevare that if you're low on 'karma' the game might be grumpy.\n\nIf the text begins with >> then someone talks to you.");
-	getchar();
+	tw.wait();
 	init();
 }
 
