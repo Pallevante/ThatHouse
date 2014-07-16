@@ -39,6 +39,7 @@ void Game::init()
 void Game::play()
 {
 	tw.write(Story::getStory());
+	mCurrentRoom = new Room(Room::RoomType::BEDROOM);
 	UserInput::userInput();
 	tw.wait();
 }
