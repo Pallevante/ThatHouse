@@ -30,7 +30,7 @@ bool Inventory::populateWithDefaultItems()
 	}
 }
 
-void Inventory::getRandomItem()
+std::string Inventory::getRandomItem()
 {	
 	// Makes a random sort of the itemsToFindVector and places the first item
 	// into the inventoryVector.
@@ -42,10 +42,12 @@ void Inventory::getRandomItem()
 		inventoryVector.push_back(itemsToFindVector[0]);
 
 	// So the user knows what he/she got.
-	itemsToFindVector[0]->getPickUpString();
+	std::string message = itemsToFindVector[0]->getPickUpString();
 
 	// Removes the first item if it's supposed to only be found once. #obfo
 	if (itemsToFindVector[0]->removeOnceFound())
 		itemsToFindVector.pop_back();
+	
+	return message;
 }
 

@@ -18,7 +18,7 @@ public:
 	static Inventory::ItemsToFindVector itemsToFindVector;
 
 	// Gives the user a random Item.
-	static void getRandomItem();
+	static std::string getRandomItem();
 	// Prints the inventory.
 	static void check();
 	// Drops the item.
