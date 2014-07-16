@@ -72,6 +72,15 @@
     <ClCompile Include="Stephen.cpp">
       <Filter>Source Files\Characters</Filter>
     </ClCompile>
+    <ClCompile Include="Juuli.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="Story.cpp">
+      <Filter>Source Files\Story</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInput.cpp">
+      <Filter>Source Files\Logic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ThreadWriting.h">
@@ -114,7 +123,10 @@
       <Filter>Header Files\Characters</Filter>
     </ClInclude>
     <ClInclude Include="UserInput.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Juuli.h">
+      <Filter>Header Files\Characters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
