@@ -47,7 +47,7 @@ std::string UserInput::translate(std::string input)
 		{
 
 		}
-		if (contains(input, "latin"))
+		if (contains(input, "swedish"))
 		{
 
 		}
