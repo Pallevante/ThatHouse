@@ -12,7 +12,7 @@ public:
 		SWEDISH
 	};
 	Note(Language lang, std::string pickMessage, std::string name, std::string content, ItemType type = NOTE);
-	std::string read();
+	std::string read(Language lang);
 protected:
 	std::string mContent;
 	std::string mName;
