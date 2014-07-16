@@ -3,7 +3,6 @@
 bool GameAI::judge(JudgeType judgeType)
 {
 	// Fetch the like from characters.
-
 	switch (judgeType)
 	{
 	case KILL_JUULI:
@@ -68,15 +67,20 @@ bool GameAI::killStephen()
 }
 
 
+// Used as a base for the AI to make decisions from
 int GameAI::getCurrentKarma()
 {
 	return Game::mKarma;
 }
 
+// The AI might give different decisions based on this aswell.
+// Good karma - low health: Kinder advice
+// Bad karma - low health: Ha! 
 int GameAI::getCurrentHealth()
 {
 	return Game::mHealth;
 }
+
 
 int GameAI::getLike(Characters::CharacterName name)
 {
@@ -85,10 +89,9 @@ int GameAI::getLike(Characters::CharacterName name)
 		if (name == _char->getName())
 		{
 			return _char->getCharacterLike();
-		}
-		else
-			return 0;
+		}		
 	}
+	return 0;
 }
 
 
