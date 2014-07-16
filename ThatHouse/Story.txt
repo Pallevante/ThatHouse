@@ -1,40 +1,40 @@
 /*                   STORY
-         *      You wake up. Being totally date-raped.
-         *      During the espace you find other people
-         *      from the nightclub you went to. You can
-         *      either escape together, ditch or kill 
-         *      your group. But beaware. Karma's a bitch.
-         *      
-         * 
-         *                  CHARACTERS
-         *      Juuli: That really cute girl that you talked to
-         *      at the bar, Dark-Blonde hair and greenish eyes. 
-         *      She's a boss in translating to languages you 
-         *      never heard before. 
-         *      
-         *      Cathrin: You only caught a glimpse of her when
-         *      going in to the club and at random occassions 
-         *      during the night. She was surrounded by guys
-         *      wanting to get 'lucky' that night.
-         *      
-         *      Stephen: One of the lads trying to hit on Cathrin. 
-         *      Don't think he scored. Seems like the regular jock.
-         *      Quite tall but skinny. Have a coocky alpha-male 
-         *      attitude. 
-         *      
-         * 
-         *                  FEATURES
-         *      Karma: This little tool will judge how you 
-         *      play and give you a value. Be sure to do good things
-         *      or it will impact the ending of this game. 
-         *      
-         *      AI-Companions: Juuli, Cathrin, Stephen want to get out.
-         *      They don't need your help, but more the merrier. If you 
-         *      have bad karma they will doubt your decisions and might
-         *      kill you.
-         *      
-         *      AI-Helper: This little fucker dosen't give a fuck about 
-         *      your health. If you're on the wrong side with him he will 
-         *      lure you in danger, ignore your pleas for help.
-         *      
-         */
+ *      You wake up. Being totally date-raped.
+ *      During the espace you find other people
+ *      from the nightclub you went to. You can
+ *      either escape together, ditch or kill 
+ *      your group. But beaware. Karma's a bitch.
+ *      
+ * 
+ *                  CHARACTERS
+ *      Juuli: That really cute girl that you talked to
+ *      at the bar, Dark-Blonde hair and greenish eyes. 
+ *      She's a boss in translating to languages you 
+ *      never heard before. 
+ *      
+ *      Cathrin: You only caught a glimpse of her when
+ *      going in to the club and at random occassions 
+ *      during the night. She was surrounded by guys
+ *      wanting to get 'lucky' that night.
+ *      
+ *      Stephen: One of the lads trying to hit on Cathrin. 
+ *      Don't think he scored. Seems like the regular jock.
+ *      Quite tall but skinny. Have a coocky alpha-male 
+ *      attitude. 
+ *      
+ * 
+ *                  FEATURES
+ *      Karma: This little tool will judge how you 
+ *      play and give you a value. Be sure to do good things
+ *      or it will impact the ending of this game. 
+ *      
+ *      AI-Companions: Juuli, Cathrin, Stephen want to get out.
+ *      They don't need your help, but more the merrier. If you 
+ *      have bad karma they will doubt your decisions and might
+ *      kill you.
+ *      
+ *      AI-Helper: This little fucker dosen't give a fuck about 
+ *      your health. If you're on the wrong side with him he will 
+ *      lure you in danger, ignore your pleas for help.
+ *      
+ */
