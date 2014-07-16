@@ -2,18 +2,37 @@
 #include "Game.h"
 #include "Characters.h"
 #include "Chapters.h"
-#include "Stephen.h"
-// Include charactes to itterate the "like" towards the player.
+#include "Story.h"
+#include <cstdlib>
 
 class GameAI
 {
 public:
-	static void judge();
+	static enum JudgeType
+	{
+		DEFAULT,
+		KILL_JUULI,
+		KILL_STEPHEN,
+		KILL_CATHRIN
+	};
+
+	static bool judge(JudgeType judgeType);
 
 private:
-	static int	getCurrentKarma();
-	static int	getLike(Characters::CharacterName name);
-	int mJuuliLike;
-	int mStephenLike;
-	int mCathrinLike;
+
+	static bool killJuuli();
+	static bool killCathrin();
+	static bool killStephen();
+
+	static bool aiHatesYou();
+	static bool defaultAICheckUp();
+
+	static int getCurrentKarma();
+	static int getCurrentHealth();
+	static int getLike(Characters::CharacterName name);
+
+	// Regular variables.
+	static int mJuuliLike;
+	static int mStephenLike;
+	static int mCathrinLike;
 };
