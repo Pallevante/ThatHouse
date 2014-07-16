@@ -1,10 +1,15 @@
 #pragma once
 #include <string>
+#include "Chapters.h"
 
 
-// I have no idea what design this will have.
 class UserInput
 {
 public:
-	std::string  getResponse(std::string input);
+	static void			userInput();
+
+private:
+	static std::string  getResponse(std::string input);
+	UserInput();
+	~UserInput();
 };
