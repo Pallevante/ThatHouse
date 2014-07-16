@@ -81,6 +81,12 @@
     <ClCompile Include="UserInput.cpp">
       <Filter>Source Files\Logic</Filter>
     </ClCompile>
+    <ClCompile Include="Room.cpp">
+      <Filter>Source Files\Story</Filter>
+    </ClCompile>
+    <ClCompile Include="RoomContent.cpp">
+      <Filter>Source Files\Story</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ThreadWriting.h">
@@ -127,6 +133,12 @@
     </ClInclude>
     <ClInclude Include="Juuli.h">
       <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="Room.h">
+      <Filter>Header Files\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomContent.h">
+      <Filter>Header Files\Story</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

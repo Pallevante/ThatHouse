@@ -88,6 +88,8 @@
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="BaseballBat.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="RoomContent.cpp" />
     <ClCompile Include="Stephen.cpp" />
     <ClCompile Include="Story.cpp" />
     <ClCompile Include="ThreadWriting.cpp" />
@@ -105,6 +107,8 @@
     <ClInclude Include="Item.h" />
     <ClInclude Include="Juuli.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="RoomContent.h" />
     <ClInclude Include="Stephen.h" />
     <ClInclude Include="Story.h" />
     <ClInclude Include="ThreadWriting.h" />
