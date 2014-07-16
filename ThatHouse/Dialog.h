@@ -6,5 +6,4 @@ class Dialog
 {
 public:
 	static std::string getResponse(std::string input);
-	static std::string getStoryIntro();
 };
