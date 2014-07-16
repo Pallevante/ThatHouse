@@ -20,3 +20,12 @@ Characters::CharacterName Characters::getName()
 {
 	return mName;
 }
+
+void Characters::setLike(CharacterName name, int addToLike)
+{
+	for (auto _char : characterVector)
+	{
+		if (name == _char->getName())
+			_char->mLike += addToLike;
+	}
+}
