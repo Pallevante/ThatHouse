@@ -12,7 +12,8 @@ public:
 	};
 	typedef std::vector<Characters*> CharacterVector;
 	static Characters::CharacterVector characterVector;
-	static bool charachterFound();
+	static bool charachterFound(CharacterName name);
+
 
 	Characters();
 	Characters(CharacterName name);
