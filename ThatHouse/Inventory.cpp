@@ -30,6 +30,18 @@ bool Inventory::populateWithDefaultItems()
 	}
 }
 
+std::string Inventory::check()
+{
+	std::string message = "Inventory contains:\n";
+	for (auto i : inventoryVector)
+	{
+		message += i->getName() + "\n";
+	}	
+	return message;
+}
+
+
+
 std::string Inventory::getRandomItem()
 {	
 	// Makes a random sort of the itemsToFindVector and places the first item

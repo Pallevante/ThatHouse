@@ -19,10 +19,12 @@ public:
 
 	// Gives the user a random Item.
 	static std::string getRandomItem();
+
 	// Prints the inventory.
-	static void check();
+	static std::string check();
+
 	// Drops the item.
-	static void drop();
+	static std::string drop();
 
 private:
 	static bool populateWithDefaultItems();
