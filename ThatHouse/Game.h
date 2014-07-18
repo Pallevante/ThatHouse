@@ -12,6 +12,7 @@
 #include "Story.h"
 #include "Room.h"
 
+class Room;
 class Game
 {
 	// So game AI has access to health and karma.
@@ -30,7 +31,8 @@ private:
 	std::string		mName;
 	static int		mKarma;
 	static int		mHealth;
-	ThreadWriting	tw;
 	static Room*	mCurrentRoom;
+	ThreadWriting	tw;
+	
 };
 

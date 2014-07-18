@@ -1,5 +1,8 @@
 #include "Game.h"
 
+Room* Game::mCurrentRoom;
+int Game::mKarma;
+int Game::mHealth;
 
 Game::Game()
 {}
