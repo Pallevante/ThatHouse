@@ -35,7 +35,12 @@ std::string Room::checkRoom()
 	std::string returnContent = "Room contains:\n";
 	for (auto i : roomVector)
 	{
-		returnContent += "a " + i->getName() + "\n";
+		returnContent += i->getName() + "\n";
 	}
 	return returnContent;
+}
+
+std::string check(RoomContent* contentToCheck)
+{
+	return contentToCheck->check();
 }
