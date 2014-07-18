@@ -1,6 +1,7 @@
 #pragma once
 #include "Item.h"
 #include "Inventory.h"
+#include <string>
 
 class Note : public Item
 {
@@ -11,9 +12,9 @@ public:
 		GERMAN,
 		SWEDISH
 	};
-	Note();
-	Note(Language	lang, std::string pickMessage, std::string name, std::string content, ItemType type = NOTE);
-	std::string		read();
+
+	Note(Language lang, std::string pickMessage, std::string name, std::string content, ItemType type = NOTE);
+	std::string	read();
 
 	Language	getLang();
 
@@ -23,7 +24,8 @@ public:
 	// Otherwise something will break
 	Note*		returnNote(Item* item);
 
-protected:
+private:
+	Note();
 	std::string mContent;
 	std::string mName;
 	std::string mPickUpMessage;
