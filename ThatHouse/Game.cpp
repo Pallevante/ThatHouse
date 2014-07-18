@@ -1,4 +1,8 @@
 #include "Game.h"
+#include "Note.h"
+#include "Sound.h"
+
+
 
 Room* Game::mCurrentRoom;
 int Game::mKarma;
@@ -14,7 +18,10 @@ Game::~Game()
 void Game::start()
 {
 	system("Title ThatHouse");
-	tw.write("Welcome to the game ThatHouse.\n\nAre you ready?\n1) Play\n2) View help\n\n");
+	tw.write("Welcome to the game ThatHouse.\n\nAre you ready?\n1) Play\n2) View help");
+	
+	Sound* mSound = new Sound("assets/song.wav");
+	mSound->playSound();
 
 	int response;
 	cin >> response;

@@ -12,6 +12,8 @@
 #include "Story.h"
 #include "Room.h"
 
+
+class Sound;
 class Room;
 class Game
 {
