@@ -1,8 +1,9 @@
 #pragma once
 #include "Inventory.h"
 #include <vector>
-#include "RoomContent.h"
 
+
+class RoomContent;
 class Room
 {
 public:
@@ -15,8 +16,8 @@ public:
 	};
 	Room(RoomType type);
 	
-	void checkRoom();
-	void check(RoomContent contentToCheck);
+	std::string checkRoom();
+	std::string check(RoomContent* contentToCheck);
 	~Room();
 	
 private:

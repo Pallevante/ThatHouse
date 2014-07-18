@@ -1,4 +1,5 @@
 #include "Room.h"
+#include "RoomContent.h"
 
 Room::Room(RoomType type)
 {
@@ -22,4 +23,19 @@ void Room::initBedroom()
 void Room::initHallway()
 {
 	roomVector.push_back(new Bookshelf());
+}
+
+void Room::initDefault()
+{
+
+}
+
+std::string Room::checkRoom()
+{
+	std::string returnContent = "Room contains:\n";
+	for (auto i : roomVector)
+	{
+		returnContent += "a " + i->getName() + "\n";
+	}
+	return returnContent;
 }
