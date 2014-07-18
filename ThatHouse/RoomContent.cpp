@@ -26,6 +26,11 @@ std::string RoomContent::check()
 }
 
 
+std::string RoomContent::getName()
+{
+	return mName;
+}
+
 Bed::Bed() :
 	RoomContent(BED)
 {
