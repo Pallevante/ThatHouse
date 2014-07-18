@@ -88,6 +88,7 @@
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="BaseballBat.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Note.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomContent.cpp" />
     <ClCompile Include="Stephen.cpp" />
