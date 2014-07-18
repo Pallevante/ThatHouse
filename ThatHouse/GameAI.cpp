@@ -1,5 +1,9 @@
 #include "GameAI.h"
 
+int GameAI::mCathrinLike;
+int GameAI::mJuuliLike;
+int GameAI::mStephenLike;
+
 bool GameAI::judge(JudgeType judgeType)
 {
 	// Fetch the like from characters.
@@ -21,6 +25,12 @@ bool GameAI::judge(JudgeType judgeType)
 		return defaultAICheckUp();
 	}	
 }
+
+bool GameAI::defaultAICheckUp()
+{
+	return true;
+}
+
 
 // Will become more complex.
 bool GameAI::aiHatesYou()
