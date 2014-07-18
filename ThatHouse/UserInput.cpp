@@ -8,12 +8,17 @@
 
 Note* UserInput::mNote;
 ThreadWriting tw;
+
 void UserInput::userInput()
 {
-	std::string input;
-	std::getline(std::cin, input);
+	tw.wait();
+	std::string input;	
+	getline(cin, input);
 	allToLower(input);
-
+	if (contains(input, "inventory"))
+	{
+		tw.write(Inventory::check());
+	}
 	if (contains(input, "translate"))
 	{
 		tw.write(translate(input));
@@ -26,6 +31,7 @@ void UserInput::userInput()
 	{
 		tw.write(Game::mCurrentRoom->checkRoom());
 	}
+	tw.wait();
 }
 
 void UserInput::allToLower(std::string& input)
@@ -55,12 +61,10 @@ std::string UserInput::read(std::string input)
 				if (mNote->getLang() == Note::GERMAN)
 				{
 					return mNote->read();
-				}
-				else
-					return "You haven't found that note yet.";
+				}				
 			}
 		}
-		return "You haven't picked up any notes.";
+		return "You haven't found that note yet.";
 	}
 
 	if (contains(input, "swedish"))
@@ -73,12 +77,10 @@ std::string UserInput::read(std::string input)
 				if (mNote->getLang() == Note::SWEDISH)
 				{
 					return mNote->read();
-				}
-				else
-					return "You haven't found that note yet.";
-			}
+				}				
+			}				
 		}		
-		return "You haven't picked up any notes.";
+		return "You haven't found that note yet.";
 	}
 
 	if (contains(input, "spanish"))
@@ -91,13 +93,10 @@ std::string UserInput::read(std::string input)
 				if (mNote->getLang() == Note::SPANISH)
 				{
 					return mNote->read();
-				}
-				else
-					return "You haven't found that note yet.";
+				}				
 			}
-			
 		}
-		return "You haven't picked up any notes.";
+		return "You haven't found that note yet.";
 	}
 	else
 	{
