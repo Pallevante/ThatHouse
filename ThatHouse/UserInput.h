@@ -2,7 +2,7 @@
 #include <string>
 #include "Chapters.h"
 
-
+class Note;
 class UserInput
 {
 public:
@@ -13,7 +13,7 @@ private:
 
 	// This will be triggered by writing translate. 
 	static std::string	translate(std::string input);
-
+	static std::string  read(std::string input);
 	/// Used to convert all characters to lowercase.
 	/// This simplifies the usage of if's to compute the input
 	static void			allToLower(std::string& input);
@@ -24,4 +24,6 @@ private:
 
 	UserInput();
 	~UserInput();
+
+	static Note* mNote;
 };

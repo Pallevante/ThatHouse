@@ -4,6 +4,10 @@
 #include <iostream>
 #include <algorithm>
 #include "Game.h"
+#include "Note.h"
+
+Note* UserInput::mNote;
+ThreadWriting tw;
 void UserInput::userInput()
 {
 	std::string input;
@@ -12,15 +16,15 @@ void UserInput::userInput()
 
 	if (contains(input, "translate"))
 	{
-		translate(input);
+		tw.write(translate(input));
 	}
 	if (contains(input, "read"))
 	{
-
+		tw.write(read(input));
 	}
 	if (contains(input, "check"))
 	{
-		Game::mCurrentRoom->checkRoom();
+		tw.write(Game::mCurrentRoom->checkRoom());
 	}
 }
 
@@ -39,6 +43,69 @@ bool UserInput::contains(std::string& input, std::string phrase)
 	else return false;
 }
 
+std::string UserInput::read(std::string input)
+{
+	if (contains(input, "german"))
+	{
+		for (auto i : Inventory::inventoryVector)
+		{
+			if (i->getType() == Item::NOTE)
+			{
+				mNote = mNote->returnNote(i);
+				if (mNote->getLang() == Note::GERMAN)
+				{
+					return mNote->read();
+				}
+				else
+					return "You haven't found that note yet.";
+			}
+		}
+		return "You haven't picked up any notes.";
+	}
+
+	if (contains(input, "swedish"))
+	{
+		for (auto i : Inventory::inventoryVector)
+		{
+			if (i->getType() == Item::NOTE)
+			{
+				mNote = mNote->returnNote(i);
+				if (mNote->getLang() == Note::SWEDISH)
+				{
+					return mNote->read();
+				}
+				else
+					return "You haven't found that note yet.";
+			}
+		}		
+		return "You haven't picked up any notes.";
+	}
+
+	if (contains(input, "spanish"))
+	{
+		for (auto i : Inventory::inventoryVector)
+		{
+			if (i->getType() == Item::NOTE)
+			{
+				mNote = mNote->returnNote(i);
+				if (mNote->getLang() == Note::SPANISH)
+				{
+					return mNote->read();
+				}
+				else
+					return "You haven't found that note yet.";
+			}
+			
+		}
+		return "You haven't picked up any notes.";
+	}
+	else
+	{
+		return "What language?";
+	}
+}
+
+
 std::string UserInput::translate(std::string input)
 {
 	if (Characters::charachterFound(Characters::JUULI))
@@ -54,6 +121,10 @@ std::string UserInput::translate(std::string input)
 		if (contains(input, "spanish"))
 		{
 
+		}
+		else
+		{
+			return "There isn't a letter in that language..";
 		}
 	}
 	else
