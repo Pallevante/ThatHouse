@@ -20,7 +20,6 @@ void ThreadWriting::wait()
 {
 	cin.clear();
 	cin.get();
-	cin.get();
 }
 
 
@@ -34,4 +33,5 @@ void ThreadWriting::write(string input)
 		// Waits for 20 milliseconds to give the typewriting effect.
 		this_thread::sleep_for(chrono::milliseconds(20));
 	}
+	cout << endl;
 }
