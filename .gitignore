@@ -1,5 +1,7 @@
 Debug/
 Release/
+SFML*
+ThatHouse/assets
 *.opensdf
 ThatHouse/Debug/
 
