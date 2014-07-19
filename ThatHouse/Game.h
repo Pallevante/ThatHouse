@@ -2,7 +2,9 @@
  * Used as a world class for the Game. 
  * Will contain almost everything.
  */
-#pragma once
+#ifndef INCLUDED_GAME
+#define INCLUDED_GAME
+
 #include "Characters.h"
 #include "Stephen.h"
 #include "ThreadWriting.h"
@@ -38,3 +40,4 @@ private:
 	
 };
 
+#endif

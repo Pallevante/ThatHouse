@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_SOUND
+#define INCLUDED_SOUND
+
 #include <SFML\Audio.hpp>
 #include <string>
 
@@ -12,3 +14,5 @@ private:
 	std::string mFilePath;
 
 };
+
+#endif 

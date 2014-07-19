@@ -4,7 +4,8 @@
  *
  */
 
-#pragma once
+#ifndef INCLUDED_THREADWRITING
+#define INCLUDED_THREADWRITING
 
 #include <string>
 #include <iostream>
@@ -23,3 +24,5 @@ public:
 private:
 	void clear();
 };
+
+#endif

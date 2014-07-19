@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_USERINPUT
+#define INCLUDED_USERINPUT
+
 #include <string>
 #include "Chapters.h"
 
@@ -27,3 +29,5 @@ private:
 
 	static Note* mNote;
 };
+
+#endif

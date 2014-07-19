@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_ROOMCONTENT
+#define	INCLUDED_ROOMCONTENT
+
 #include <string>
 #include "Room.h"
 
@@ -48,3 +50,6 @@ class Oven : public RoomContent
 public:
 	Oven();
 };
+
+#endif // !INCLUDED_ROOMCONTENT
+

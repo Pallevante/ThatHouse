@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_CHAPTERS
+#define INCLUDED_CHAPTERS
+
 #include <string>
 class Chapters
 {
@@ -37,3 +39,4 @@ private:
 	static int				currentChapter;
 };
 
+#endif

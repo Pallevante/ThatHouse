@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_NOTE
+#define INCLUDED_NOTE
+
 #include "Item.h"
 #include "Inventory.h"
 #include <string>
@@ -31,3 +33,5 @@ private:
 	std::string mPickUpMessage;
 	Language	mLanguage;
 };
+
+#endif

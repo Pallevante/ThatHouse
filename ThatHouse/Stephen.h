@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_STEPHEN
+#define INCLUDED_STEPHEN
+
 #include "Characters.h"
 
 class Stephen : public Characters
@@ -7,3 +9,6 @@ public:
 	Stephen();
 	~Stephen();
 };
+
+#endif 
+

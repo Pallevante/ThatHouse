@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_ITEM
+#define INCLUDED_ITEM
+
 #include <string>
 
 class Item
@@ -28,3 +30,5 @@ protected:
 	std::string mPickUp;
 
 };
+
+#endif

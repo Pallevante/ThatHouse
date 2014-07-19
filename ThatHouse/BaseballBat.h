@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_BASEBALLBAT
+#define INCLUDED_BASEBALLBAT
+
 #include "Item.h"
 #include "Inventory.h"
 
@@ -8,3 +10,5 @@ public:
 	BaseballBat();
 	~BaseballBat();
 };
+
+#endif

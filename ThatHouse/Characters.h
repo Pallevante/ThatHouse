@@ -1,7 +1,8 @@
-#pragma once
+#ifndef INCLUDED_CHARACTERS
+#define INCLUDED_CHARACTERS
 #include <vector>
 
-class Characters 
+class Characters
 {
 public:
 	enum CharacterName
@@ -28,3 +29,5 @@ protected:
 	CharacterName	mName;
 	int				mLike;
 };
+
+#endif 

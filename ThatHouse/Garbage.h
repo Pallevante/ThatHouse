@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_GARBAGE
+#define INCLUDED_GARBAGE
+
 #include "Item.h"
 #include "Inventory.h"
 
@@ -8,3 +10,4 @@ public:
 	Garbage();
 	~Garbage();
 };
+#endif

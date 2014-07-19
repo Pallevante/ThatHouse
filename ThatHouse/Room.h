@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_ROOM
+#define INCLUDED_ROOM
+
 #include "Inventory.h"
 #include <vector>
 
@@ -27,3 +29,5 @@ private:
 	void initKitchen();
 	void initDefault();
 };
+
+#endif

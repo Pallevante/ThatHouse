@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_GAMEAI
+#define INCLUDED_GAMEAI
+
 #include "Game.h"
 #include "Characters.h"
 #include "Chapters.h"
@@ -36,3 +38,5 @@ private:
 	static int mStephenLike;
 	static int mCathrinLike;
 };
+
+#endif

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef INCLUDED_INVENTORY
+#define INCLUDED_INVENTORY
+
 #include <vector>
 #include <algorithm>
 #include "Item.h"
@@ -29,3 +31,5 @@ public:
 private:
 	static bool populateWithDefaultItems();
 };
+
+#endif
