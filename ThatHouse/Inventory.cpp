@@ -40,7 +40,15 @@ std::string Inventory::check()
 	return message;
 }
 
-
+bool Inventory::checkFor(Item::ItemType type)
+{
+	for (auto i : inventoryVector)
+	{
+		if (i->getType() == type)
+			return true;
+	}
+	return false;
+}
 
 std::string Inventory::getRandomItem()
 {	

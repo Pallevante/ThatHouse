@@ -28,6 +28,10 @@ public:
 	// Drops the item.
 	static std::string drop();
 
+	// Checks inventory for sepcific item type
+	// Often used for a action with a requirement
+	static bool checkFor(Item::ItemType type);
+
 private:
 	static bool populateWithDefaultItems();
 };
