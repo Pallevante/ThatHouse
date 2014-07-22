@@ -18,7 +18,7 @@ using namespace std;
 class ThreadWriting
 {
 public:
-	// Writes the parameter to the console window with a delay of 25 ms between characters
+	// Writes the parameter to the console window with a delay of 20 ms between characters
 	void write(string input);
 	void wait();
 private:
