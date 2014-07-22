@@ -16,7 +16,9 @@ public:
 	};
 
 	Note(Language lang, std::string pickMessage, std::string name, std::string content, ItemType type = NOTE);
+
 	std::string	read();
+	std::string translate();
 
 	Language	getLang();
 

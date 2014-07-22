@@ -8,6 +8,7 @@ Item(type, name, pickUpMessage, true)
 	Inventory::inventoryVector.push_back(this);
 }
 
+
 Note* Note::returnNote(Item* item)
 {
 	return (Note*)item;
@@ -16,6 +17,11 @@ Note* Note::returnNote(Item* item)
 std::string Note::read()
 {
 	return mContent;
+}
+
+std::string Note::translate()
+{
+	return "Hehe";
 }
 
 Note::Language Note::getLang()
