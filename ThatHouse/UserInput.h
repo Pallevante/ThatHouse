@@ -7,6 +7,7 @@
 class Note;
 class UserInput
 {
+
 public:
 	static void			userInput();
 
@@ -15,7 +16,16 @@ private:
 
 	// This will be triggered by writing translate. 
 	static std::string	translate(std::string input);
+
+	// This can be used without the translation character.
 	static std::string  read(std::string input);
+	
+	// This is triggered by user input containing "check"
+	static std::string  check(std::string input);
+
+	// This is triggered by user input contaning "hit"
+	static std::string	hit(std::string input);
+
 	/// Used to convert all characters to lowercase.
 	/// This simplifies the usage of if's to compute the input
 	static void			allToLower(std::string& input);
