@@ -10,6 +10,7 @@ public:
 	{
 		WEAPON,
 		NOTE,
+		ROCK,
 		GARBAGE
 	};
 
