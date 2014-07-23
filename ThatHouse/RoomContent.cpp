@@ -22,7 +22,7 @@ std::string RoomContent::check()
 	if (mType != TOILET)
 		return Inventory::getRandomItem();
 	else
-		return "Yep! It's a toilet!";
+		return "Yep! It's " + mName;
 }
 
 

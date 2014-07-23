@@ -24,6 +24,12 @@ void UserInput::userInput()
 		std::string input;
 		getline(cin, input);
 		allToLower(input);
+		
+		// We need to check for curses because of politness
+		if(contains(input, "fuck"))
+		{
+			Player::ammountOfCurses++;
+		}
 		if (contains(input, "inventory"))
 		{
 			tw.write(Inventory::check());
