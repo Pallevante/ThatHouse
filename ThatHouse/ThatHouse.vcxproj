@@ -92,6 +92,8 @@
     <ClCompile Include="BaseballBat.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Note.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Rock.cpp" />
     <ClCompile Include="Room.cpp" />
     <ClCompile Include="RoomContent.cpp" />
     <ClCompile Include="Sound.cpp" />
@@ -112,6 +114,8 @@
     <ClInclude Include="Item.h" />
     <ClInclude Include="Juuli.h" />
     <ClInclude Include="Note.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Rock.h" />
     <ClInclude Include="Room.h" />
     <ClInclude Include="RoomContent.h" />
     <ClInclude Include="Sound.h" />

@@ -3,5 +3,5 @@
 Garbage::Garbage() : 
 	Item(GARBAGE, "Garbage", "There isn't anything usefull here..", false)
 {
-	Inventory::inventoryVector.push_back(this);
+	
 }
