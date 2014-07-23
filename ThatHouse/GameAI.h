@@ -21,6 +21,14 @@ public:
 	static bool judge(JudgeType judgeType);
 
 private:
+	// The different AI States. 
+	enum CurrentAIState
+	{
+		HAPPY,
+		MIDDLE,
+		MAD,
+		UWOTM8
+	};
 
 	static bool killJuuli();
 	static bool killCathrin();
@@ -37,6 +45,8 @@ private:
 	static int mJuuliLike;
 	static int mStephenLike;
 	static int mCathrinLike;
+
+	CurrentAIState mCurrentAIState;
 };
 
 #endif

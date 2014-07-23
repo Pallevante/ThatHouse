@@ -4,6 +4,8 @@ int GameAI::mCathrinLike;
 int GameAI::mJuuliLike;
 int GameAI::mStephenLike;
 
+mCurrentAIState = DEFAULT;
+
 bool GameAI::judge(JudgeType judgeType)
 {
 	// Fetch the like from characters.
@@ -26,9 +28,16 @@ bool GameAI::judge(JudgeType judgeType)
 	}	
 }
 
+// Should be more complex... 
 bool GameAI::defaultAICheckUp()
 {
-	return true;
+	if(getCurrentKarma() * Player::ammountOfCurses )
+	{
+		if(!aiHatesYou())
+		{
+
+		}
+	}
 }
 
 
