@@ -54,6 +54,8 @@ std::string Inventory::getRandomItem()
 		inventoryVector.push_back(itemsToFindVector[0]);
 
 	// So the user knows what he/she got.
+	// Since the item probably gets removed later
+	// there is a need for this string to exist. 
 	std::string message = itemsToFindVector[0]->getPickUpString();
 
 	// Removes the first item if it's supposed to only be found once. #obfo
