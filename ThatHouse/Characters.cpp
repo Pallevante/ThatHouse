@@ -33,7 +33,7 @@ void Characters::setLike(CharacterName name, int addToLike)
 
 bool Characters::charachterFound(CharacterName name)
 {
-	for (auto& i : characterVector)
+	for (auto i : characterVector)
 	{
 		if (i->getName() == name)
 		{
