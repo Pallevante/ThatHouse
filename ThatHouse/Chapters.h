@@ -10,13 +10,13 @@ public:
 	~Chapters();
 
 	// Might be shortened
-	static enum CurrentChapter
+	enum CurrentChapter
 	{
 		FIRST	= 0,
 		SECOND	= 1,
 		THIRD	= 2
 	};
-	static enum CurrentPart
+	enum CurrentPart
 	{
 		FIRST_PART	= 0,
 		SECOND_PART = 1,
