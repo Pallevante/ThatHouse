@@ -1,6 +1,7 @@
 #ifndef INCLUDED_CHARACTERS
 #define INCLUDED_CHARACTERS
 #include <vector>
+#include <string>
 
 class Characters
 {
