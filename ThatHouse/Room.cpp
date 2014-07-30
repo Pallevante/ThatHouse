@@ -1,6 +1,6 @@
 #include "Room.h"
 #include "RoomContent.h"
-
+#include "Chapters.h"
 Room::Room(RoomType type)
 {
 	switch (type)
@@ -11,6 +11,25 @@ Room::Room(RoomType type)
 	case BEDROOM:
 		initBedroom();
 		break;
+	}
+}
+
+Room::RoomType Room::getRoomType()
+{
+	switch (Chapters::getChapter())
+	{
+	case Chapters::FIRST:
+		switch (Chapters::getPart())
+		{
+		case Chapters::FIRST_PART:
+			return Room::BEDROOM;
+
+		case Chapters::SECOND_PART:
+			return Room::BEDROOM;
+
+		case Chapters::THIRD_PART:
+			return Room::HALLWAY;
+		}
 	}
 }
 

@@ -3,8 +3,12 @@
 int GameAI::mCathrinLike;
 int GameAI::mJuuliLike;
 int GameAI::mStephenLike;
+GameAI::CurrentAIState GameAI::mCurrentAIState;
 
-mCurrentAIState = DEFAULT;
+void GameAI::init()
+{
+	mCurrentAIState = NEUTRAL;
+}
 
 bool GameAI::judge(JudgeType judgeType)
 {
@@ -35,8 +39,9 @@ bool GameAI::defaultAICheckUp()
 	{
 		if(!aiHatesYou())
 		{
-
+			return true;
 		}
+		return false;
 	}
 }
 

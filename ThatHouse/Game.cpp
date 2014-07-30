@@ -2,8 +2,6 @@
 #include "Note.h"
 #include "Sound.h"
 
-
-
 Room* Game::mCurrentRoom;
 int Game::mKarma;
 int Game::mHealth;
@@ -51,7 +49,7 @@ void Game::play()
 	bool _quit = false;
 	while (!_quit)
 	{
-		mCurrentRoom = new Room(Story::getRoomType());
+		mCurrentRoom = new Room(mCurrentRoom->getRoomType());
 		tw.write(Story::getStory());		
 		UserInput::userInput();
 		tw.wait();

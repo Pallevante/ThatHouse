@@ -2,25 +2,6 @@
 #include "Player.h"
 #include "Room.h"
 
-Room::RoomType Story::getRoomType()
-{
-	switch (Chapters::getChapter())
-	{
-	case Chapters::FIRST:
-		switch (Chapters::getPart())
-		{
-		case Chapters::FIRST_PART:
-			return Room::BEDROOM;
-
-		case Chapters::SECOND_PART:
-			return Room::BEDROOM;
-
-		case Chapters::THIRD_PART:
-			return Room::HALLWAY;
-		}
-	}
-}
-
 std::string Story::getStory()
 {
 	switch(Chapters::getChapter())

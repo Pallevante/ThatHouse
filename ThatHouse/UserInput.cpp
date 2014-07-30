@@ -88,7 +88,7 @@ std::string UserInput::check(std::string input)
 		}
 	}
 	else
-		return "Chech what?";
+		return "Check what?";
 }
 
 std::string UserInput::hit(std::string input)

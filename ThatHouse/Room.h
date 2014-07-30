@@ -9,7 +9,7 @@ class RoomContent;
 class Room
 {
 public:
-	static enum RoomType
+	enum RoomType
 	{
 		DEFAULT,
 		BEDROOM,
@@ -20,6 +20,7 @@ public:
 	
 	std::string checkRoom();
 	std::string check(RoomContent* contentToCheck);
+	RoomType getRoomType();
 	~Room();
 	
 private:

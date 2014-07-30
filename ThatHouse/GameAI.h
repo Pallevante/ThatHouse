@@ -6,6 +6,7 @@
 #include "Chapters.h"
 #include "Story.h"
 #include <cstdlib>
+#include "Player.h"
 
 class GameAI
 {
@@ -19,13 +20,13 @@ public:
 	};
 
 	static bool judge(JudgeType judgeType);
-
+	static void init();
 private:
 	// The different AI States. 
 	enum CurrentAIState
 	{
 		HAPPY,
-		MIDDLE,
+		NEUTRAL,
 		MAD,
 		UWOTM8
 	};
@@ -46,7 +47,7 @@ private:
 	static int mStephenLike;
 	static int mCathrinLike;
 
-	CurrentAIState mCurrentAIState;
+	static CurrentAIState mCurrentAIState;
 };
 
 #endif
