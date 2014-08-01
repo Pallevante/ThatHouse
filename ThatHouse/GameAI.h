@@ -11,7 +11,7 @@
 class GameAI
 {
 public:
-	static enum JudgeType
+	enum JudgeType
 	{
 		DEFAULT,
 		KILL_JUULI,
