@@ -5,3 +5,8 @@ Juuli::Juuli():
 {
 	Characters::characterVector.push_back(this);
 }
+
+std::string Juuli::characterResponse()
+{
+	return "lul wut?";
+}
