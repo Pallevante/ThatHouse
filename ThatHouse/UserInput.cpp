@@ -12,7 +12,7 @@
 
 Note* UserInput::mNote;
 ThreadWriting tw;
-
+std::string UserInput::input;
 
 // MAIN USER INPUT LOOP
 void UserInput::userInput()
@@ -21,10 +21,13 @@ void UserInput::userInput()
 	while (!isDoneWithPart)
 	{
 		tw.wait();
-		std::string input;
+		input.clear();
 		getline(cin, input);
 		allToLower(input);
-		
+		if (input == "")
+		{
+			tw.write("I didn't get that.");
+		}
 		// We need to check for curses because of politness
 		if(contains(input, "fuck"))
 		{
@@ -50,7 +53,6 @@ void UserInput::userInput()
 		{
 			tw.write(hit(input));
 		}
-		tw.wait();
 	}
 }
 

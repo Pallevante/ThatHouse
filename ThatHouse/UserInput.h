@@ -14,6 +14,9 @@ public:
 private:
 	static std::string  getResponse(std::string input);
 
+	// The input var.
+	static std::string input;
+
 	// This will be triggered by writing translate. 
 	static std::string	translate(std::string input);
 
