@@ -10,3 +10,8 @@ Stephen::~Stephen()
 {
 	delete this;
 }
+
+std::string Stephen::characterResponse()
+{
+	return "Huh....";
+}

@@ -1,6 +1,6 @@
 #include "Game.h"
 #include "Note.h"
-#include "Sound.h"
+//#include "Sound.h"
 
 Room* Game::mCurrentRoom;
 int Game::mKarma;
@@ -17,9 +17,13 @@ void Game::start()
 {
 	system("Title ThatHouse");
 	tw.write("Welcome to the game ThatHouse.\n\nAre you ready?\n1) Play\n2) View help");
+
+	// Sound is currently windows only.
+	#ifdef _WIN32
+		Sound* mSound = new Sound("assets/song.wav");
+		mSound->playSound();
+	#endif
 	
-	Sound* mSound = new Sound("assets/song.wav");
-	mSound->playSound();
 
 	int response;
 	cin >> response;
@@ -63,7 +67,8 @@ void Game::displayHelp()
 		"If the title contains 'Choice' then you have to decide what to do.\nIn most cases you can type 'what to do?' and you'll get a hint.\n"
 		"Bevare that if you're low on 'karma' the game might be grumpy.\n\nIf the text begins with >> then someone talks to you.");
 	tw.wait();
-	init();
+	tw.wait();
+	start();
 }
 
 bool Game::initCharacters()

@@ -6,6 +6,8 @@
 class Juuli : public Characters
 {
 	Juuli();
+	~Juuli();
+	virtual std::string characterResponse();
 };
 
 #endif

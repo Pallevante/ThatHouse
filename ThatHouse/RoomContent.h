@@ -7,7 +7,7 @@
 class RoomContent
 {
 public:
-	static enum ContentType
+	enum ContentType
 	{
 		BED,
 		TOILET,

@@ -21,7 +21,7 @@ public:
 	Characters(CharacterName name);
 	~Characters();
 	int getCharacterLike();
-	std::string characterResponse();
+	virtual std::string characterResponse() = 0;
 	void setLike(CharacterName name, int addToLike);
 	CharacterName getName();
 

@@ -8,6 +8,7 @@ class Stephen : public Characters
 public:
 	Stephen();
 	~Stephen();
+	virtual std::string characterResponse();
 };
 
 #endif 

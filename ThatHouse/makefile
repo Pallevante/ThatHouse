@@ -14,16 +14,20 @@
 
 
 # The objects we need to create/reference
-OBJECTS = BaseballBat.o Chapters.o Characters.o Dialog.o Game.o GameAI.o Garbage.o Inventory.o Item.o Juuli.o Main.o Note.o Player.o Rock.o Room.o RoomContent.o Sound.o Stephen.o Story.o ThreadWriting.o UserInput.o
+# No sound
+OBJECTS = BaseballBat.o Chapters.o Characters.o Game.o GameAI.o Garbage.o Inventory.o Item.o Juuli.o Main.o Note.o Player.o Rock.o Room.o RoomContent.o Stephen.o Story.o ThreadWriting.o UserInput.o
+# Sound
+# OBJECTS = BaseballBat.o Chapters.o Characters.o  Game.o GameAI.o Garbage.o Inventory.o Item.o Juuli.o Main.o Note.o Player.o Rock.o Room.o RoomContent.o Sound.o Stephen.o Story.o ThreadWriting.o UserInput.o
 
 # Output file
 EXEC = ThatHouse
 
 # Flags
-CXXFLAGS = -Wall
+# CXXFLAGS = -Wall
 
 # The compiler
 CXX = g++ -std=c++11
 
 all: $(OBJECTS)
-	$(CXX) $(CXXFLAGS) -o $(EXEC) $(OBJECTS)
+#	$(CXX) $(CXXFLAGS) -o $(EXEC) $(OBJECTS)
+	$(CXX) -o $(EXEC) $(OBJECTS)
