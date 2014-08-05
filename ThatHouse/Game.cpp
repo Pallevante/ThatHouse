@@ -1,6 +1,6 @@
 #include "Game.h"
 #include "Note.h"
-//#include "Sound.h"
+#include "Sound.h"
 
 Room* Game::mCurrentRoom;
 int Game::mKarma;
