@@ -13,7 +13,7 @@ public:
 
 private:
 	static std::string  getResponse(std::string input);
-
+	static bool mIsDoneWithPart;
 	// The input var.
 	static std::string input;
 

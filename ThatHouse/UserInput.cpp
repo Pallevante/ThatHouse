@@ -13,14 +13,14 @@
 Note* UserInput::mNote;
 ThreadWriting tw;
 std::string UserInput::input;
+bool UserInput::mIsDoneWithPart;
 
 // MAIN USER INPUT LOOP
 void UserInput::userInput()
 {
-	bool isDoneWithPart = false;
-	while (!isDoneWithPart)
+	mIsDoneWithPart = false;
+	while (!mIsDoneWithPart)
 	{
-		tw.wait();
 		input.clear();
 		getline(cin, input);
 		allToLower(input);
@@ -49,7 +49,7 @@ void UserInput::userInput()
 		{
 			tw.write(check(input));
 		}
-		if (contains(input, "hit"))
+		if (contains(input, "hit") || contains(input, "break"))
 		{
 			tw.write(hit(input));
 		}
@@ -95,12 +95,13 @@ std::string UserInput::check(std::string input)
 
 std::string UserInput::hit(std::string input)
 {
-	if (contains(input, "cuffs"))
+	if (contains(input, "cuff"))
 	{
 		if (Inventory::checkFor(Item::ROCK))
 		{
 			Player::isTiedToBed = false;
 			Chapters::progressPart();
+			mIsDoneWithPart = true;
 			return "After a while the cuffs break...";
 		}
 		else

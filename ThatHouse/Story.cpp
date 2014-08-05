@@ -15,7 +15,6 @@ std::string Story::getStory()
 		case Chapters::SECOND_PART:
 			Player::isInDanger = true;
 			return "You get out of the bed and hear footsteps outside the door...";
-
 		}
 	}	
 }
