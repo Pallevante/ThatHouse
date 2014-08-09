@@ -46,7 +46,7 @@ void Room::initHallway()
 
 void Room::initDefault()
 {
-
+	roomVector.push_back(new Oven());
 }
 
 std::string Room::checkRoom()

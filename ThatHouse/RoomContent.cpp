@@ -13,6 +13,10 @@ RoomContent::RoomContent(ContentType type)
 		mName		= "a bookshelf";
 		mIsChecked	= false;
 		mType		= type;
+	case OVEN:
+		mName		= "an oven";
+		mIsChecked	= false;
+		mType		= type;
 	}
 }
 
@@ -33,6 +37,11 @@ std::string RoomContent::getName()
 
 Bed::Bed() :
 	RoomContent(BED)
+{
+}
+
+Oven::Oven() : 
+	RoomContent(OVEN)
 {
 }
 
