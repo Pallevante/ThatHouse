@@ -1,6 +1,9 @@
 #include "Game.h"
 #include "Note.h"
-#include "Sound.h"
+// Sound is windows only.
+#ifdef _WIN32
+	#include "Sound.h"
+#endif
 
 Room* Game::mCurrentRoom;
 int Game::mKarma;
