@@ -46,7 +46,7 @@ void Game::init()
 
 	// If this happends, I fucked something up or the same reason as above.
 	if (!initCharacters())
-		tw.write("ERROR WHILE INITIALIZING - SOMETHING BROKE :(\n\nThe characters couldn't be initialized, Game totally broken contact me.");
+		tw.write("ERROR WHILE INITIALIZING - SOMETHING BROKE :(\n\nThe characters couldn't be initialized, Try launching the game again");
 	
 	play();
 }
