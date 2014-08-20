@@ -31,7 +31,7 @@ private:
 
 	/// Used to convert all characters to lowercase.
 	/// This simplifies the usage of if's to compute the input
-	static void			allToLower(std::string& input);
+	static void			allToLower(std::string* input);
 
 	// Used to find phrases in the input.
 	// ARGUMENTS: String to search, String what to look for.

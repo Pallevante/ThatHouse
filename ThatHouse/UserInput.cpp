@@ -23,7 +23,7 @@ void UserInput::userInput()
 	{
 		input.clear();
 		getline(cin, input);
-		allToLower(input);
+		allToLower(&input);
 		if (input == "")
 		{
 			tw.write("I didn't get that.");
@@ -53,12 +53,16 @@ void UserInput::userInput()
 		{
 			tw.write(hit(input));
 		}
+		else
+		{
+			tw.write("I didn't get that");
+		}
 	}
 }
 
-void UserInput::allToLower(std::string& input)
+void UserInput::allToLower(std::string* input)
 {
-	std::transform(input.begin(), input.end(), input.begin(), ::tolower);
+	std::transform(input->begin(), input->end(), input->begin(), ::tolower);
 }
 
 bool UserInput::contains(std::string& input, std::string phrase)
@@ -70,6 +74,10 @@ bool UserInput::contains(std::string& input, std::string phrase)
 	}
 	else return false;
 }
+
+//
+// String methods.
+//
 
 std::string UserInput::check(std::string input)
 {
