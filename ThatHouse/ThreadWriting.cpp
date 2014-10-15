@@ -30,7 +30,7 @@ void ThreadWriting::write(string input)
 	for (auto i : input)
 	{
 		cout << i << flush;
-		// Waits for 20 milliseconds to give the typewriting effect.
+		// Waits for the ammount of time settings displays.
 		this_thread::sleep_for(chrono::milliseconds(20));
 	}
 	cout << endl;

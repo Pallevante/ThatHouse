@@ -15,6 +15,7 @@ ThreadWriting tw;
 std::string UserInput::input;
 bool UserInput::mIsDoneWithPart;
 
+
 // MAIN USER INPUT LOOP
 void UserInput::userInput()
 {
@@ -22,6 +23,7 @@ void UserInput::userInput()
 	while (!mIsDoneWithPart)
 	{
 		input.clear();
+		tw.wait();
 		getline(cin, input);
 		allToLower(&input);
 		if (input == "")
@@ -105,7 +107,7 @@ std::string UserInput::hit(std::string input)
 {
 	if (contains(input, "cuff"))
 	{
-		if (Inventory::checkFor(Item::ROCK))
+		if (Inventory::checkFor(Item::ROCK) && Player::isTiedToBed)
 		{
 			Player::isTiedToBed = false;
 			Chapters::progressPart();

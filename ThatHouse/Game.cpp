@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Note.h"
+
 // Sound is windows only.
 #ifdef _WIN32
 	#include "Sound.h"
@@ -24,7 +25,7 @@ void Game::start()
 	// Sound is currently windows only.
 	#ifdef _WIN32
 		Sound* mSound = new Sound("assets/song.wav");
-		mSound->playSound();
+		//mSound->playSound();
 	#endif
 	
 
@@ -54,10 +55,12 @@ void Game::init()
 void Game::play()
 {
 	bool _quit = false;
+	// Main game loop. Crazy I know ;D
 	while (!_quit)
-	{
+	{		
 		mCurrentRoom = new Room(mCurrentRoom->getRoomType());
-		tw.write(Story::getStory());		
+		tw.write(Story::getStory());
+		
 		UserInput::userInput();
 		tw.wait();
 	}
@@ -79,6 +82,7 @@ bool Game::initCharacters()
 	try
 	{
 		Characters::characterVector.push_back(new Stephen());
+		Characters::characterVector.push_back(new Juuli());
 		return true;
 	}
 	catch (std::exception ex)

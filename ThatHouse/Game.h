@@ -13,7 +13,7 @@
 #include "UserInput.h"
 #include "Story.h"
 #include "Room.h"
-
+#include "Juuli.h"
 
 class Sound;
 class Room;
@@ -21,7 +21,8 @@ class Game
 {
 	// So game AI has access to health and karma.
 	friend class GameAI;
-	friend class UserInput;
+	friend class UserInput; 
+	friend class ThreadWriting;
 public:
 	Game();
 	~Game();
@@ -37,7 +38,7 @@ private:
 	static int		mHealth;
 	static Room*	mCurrentRoom;
 	ThreadWriting	tw;
-	
+
 };
 
 #endif
